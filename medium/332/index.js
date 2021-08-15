@@ -3,7 +3,6 @@
  * @return {string[]}
  */
  var findItinerary = function(tickets) {
-    let count = tickets.length
     const ptrStack = []
     const stack = []
     const map = {}
@@ -20,24 +19,9 @@
     })
 
     sortOrder(map)
-    stack.push(map.JFK)
-    while(count > 0){
-        const node = stack[stack.length-1]
-        if(node.goals.length === 0){
-            const ptr = ptrStack.pop()
-            count += stack.length -1 - ptr
-            reload(ptr, stack)
-        }else{
-            if(node.goals.length > 1){
-                ptrStack.push(stack.length-1)
-            }
-            const to = node.goals.shift()
-            stack.push(map[to])
-            count -= 1
-        }
-    }
+    dfs('JFK', stack, map)
 
-    return stack.map(item=>item.from)
+    return stack.map(item=>item.from).reverse()
 };
 
 function Ticket(from){
@@ -64,6 +48,15 @@ function reload( ptr, stack){
         from.goals.push(goal.from)
     }
     stack.splice(ptr+1)
+}
+
+function dfs(start, stack, map){
+    const node = map[start]
+    while(node.goals.length > 0){
+        const to = node.goals.shift()
+        dfs(to, stack, map)
+    }
+    stack.push(node)
 }
 
 export {Ticket, findItinerary}
