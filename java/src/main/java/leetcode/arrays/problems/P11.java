@@ -42,7 +42,6 @@ public class P11 {
       if (heights[hPtr] > heights[tPtr]) tPtr--;
       else hPtr++;
       max = Math.max(this.calculate(hPtr, tPtr, heights), max);
-      max = Math.max(this.calculate(hPtr, tPtr, heights), max);
     }
 
     return max;
