@@ -18,11 +18,17 @@ public class P15 {
     if (nums.length >= 3) {
       Arrays.sort(nums);
       for (int i = 0; i < nums.length - 2; i++) {
+        if (nums[i] > 0) {
+          break;
+        }
         int first = nums[i];
         if (i == 0 || nums[i] != nums[i - 1]) {
           List array = new ArrayList<Integer>();
           array.add(first);
           for (int j = nums.length - 1; j > i + 1 && array.size() == 1; j--) {
+            if (nums[j] < 0) {
+              break;
+            }
             int second = nums[j];
             if (j == nums.length - 1 || second != nums[j + 1]) {
               int sum = first + second;
