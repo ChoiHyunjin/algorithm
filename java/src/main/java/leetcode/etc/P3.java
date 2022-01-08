@@ -12,13 +12,13 @@ public class P3 {
     for (int i = 0; i < s.length(); i++) {
       char ch = s.charAt(i);
       if (flags[ch] >= 0) {
-        max = Math.max(i - ptr, max);
-        ptr = Math.max(flags[ch]+1, ptr);
+        ptr = Math.max(flags[ch] + 1, ptr);
       }
+      max = Math.max(i - ptr + 1, max);
       flags[ch] = i;
     }
 
-    return Math.max(max, s.length() - ptr);
+    return max;
   }
 
   public static void main(String[] args) {
