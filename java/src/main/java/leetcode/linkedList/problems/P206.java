@@ -20,4 +20,8 @@ public class P206 {
       return new ListNode[]{head, head};
     }
   }
+
+  public static void main(String[] args) {
+
+  }
 }
