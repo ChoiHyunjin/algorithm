@@ -1,8 +1,11 @@
-package leetcode.arrays.problems;
+package leetcode.linkedList.problems;
+
+import leetcode.linkedList.ListNode;
 
 public class P206 {
   public ListNode reverseList(ListNode head) {
-    if (head == null) return null;
+    if (head == null)
+      return null;
 
     ListNode[] res = reverse(head);
     res[1].next = null;
@@ -17,7 +20,7 @@ public class P206 {
       prev[1] = head;
       return prev;
     } else {
-      return new ListNode[]{head, head};
+      return new ListNode[] { head, head };
     }
   }
 
