@@ -45,29 +45,30 @@ class P33 {
 		
 		let mid: Int = (start+end) / 2
 		if nums[mid] == target {
-			res = mid
-		} else {
-			if start+1 >= mid {
-				if nums[start] == target{
-					res = start
-				}else if nums[mid] == target{
-					res = mid
-				}
-			}else {
-				res = searchValue(nums, start, mid, target)
-			}
-			if res < 0 {
-				if mid+1 >= end{
-					if nums[end] == target{
-					 res = end
-				 }else if nums[mid] == target{
-					 res = mid
-				 }
-				}else {
-					res = searchValue(nums, mid, end, target)
-				}
-			}
-		}
+			return mid
+    }
+		
+    if start+1 >= mid {
+      if nums[start] == target{
+        res = start
+      }else if nums[mid] == target{
+        res = mid
+      }
+    }else {
+      res = searchValue(nums, start, mid, target)
+    }
+    if res < 0 {
+      if mid+1 >= end{
+        if nums[end] == target{
+         res = end
+       }else if nums[mid] == target{
+         res = mid
+       }
+      }else {
+        res = searchValue(nums, mid, end, target)
+      }
+    }
+		
 		
 		return res
 	}
