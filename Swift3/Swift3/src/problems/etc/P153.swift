@@ -8,13 +8,13 @@
 import Foundation
 
 class P153{
-	func findMin(_ nums: [Int]) -> Int{
-		let res = find(nums, 0, nums.count-1)
-		
-		return nums[res]
-	}
+  func findMin(_ nums: [Int]) -> Int{
+    let res = find(nums, 0, nums.count-1)
+
+    return nums[res]
+  }
 	
-	func find(_ nums: [Int], _ start:Int, _ end: Int) -> Int{
+  func find(_ nums: [Int], _ start:Int, _ end: Int) -> Int{
     var res = 0;
 
     if start+1 == end{
@@ -26,8 +26,8 @@ class P153{
       }else if nums[mid] > nums[end]{
         res = self.find(nums, mid, end)
       }
-		}
-		
-		return res
-	}
+    }
+    
+    return res
+  }
 }
