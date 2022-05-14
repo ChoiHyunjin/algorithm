@@ -8,15 +8,8 @@
 import Foundation
 
 class P417 {
-    func pacificAtlantic(_ heights: [[Int]]) -> [[Int]] {
-        var res = [[Int]]()
-        
-        
-        
-        return res
-    }
     
-    func pacificAtlantic3(_ heights: [[Int]]) -> [[Int]] {
+    func pacificAtlantic(_ heights: [[Int]]) -> [[Int]] {
         var res = [[Int]]()
         
         var pacificMap = Array.init(repeating: Array.init(repeating: true, count: heights[0].count), count: heights.count)
