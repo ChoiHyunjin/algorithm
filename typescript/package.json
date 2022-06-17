@@ -1,0 +1,17 @@
+{
+  "name": "class101",
+  "version": "1.0.0",
+  "description": "for Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "hyunjin Choi",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1"
+  }
+}
