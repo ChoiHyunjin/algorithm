@@ -1,14 +1,14 @@
 function findRedundantConnection(edges: number[][]): number[] {
     let res: number[] = []
 
-    const list: Edge[] = new Array(edges.length)
+    const list: NewNode[] = new Array(edges.length)
 
     for(let edge of edges){
         if(list[edge[0]] == null){
-            list[edge[0]] = new Edge(edge[0])
+            list[edge[0]] = new NewNode(edge[0])
         }
         if(list[edge[1]] == null){
-            list[edge[1]] = new Edge(edge[1])
+            list[edge[1]] = new NewNode(edge[1])
         }
         list[edge[0]].link(list[edge[1]])
         list[edge[1]].link(list[edge[0]])
@@ -48,8 +48,8 @@ function findRedundantConnection(edges: number[][]): number[] {
     return res
 }
 
-class Edge {
-    private _linked: Edge[]
+class NewNode {
+    private _linked: NewNode[]
     value: number
 
     constructor(value: number){
@@ -57,7 +57,7 @@ class Edge {
         this.value = value
     }
 
-    link(edge: Edge){
+    link(edge: NewNode){
         this._linked.push(edge)
     }
 
@@ -69,7 +69,7 @@ class Edge {
         return this._linked.pop()
     }
 
-    unlink(edge: Edge){
+    unlink(edge: NewNode){
         const idx = this._linked.indexOf(edge)
         this._linked.splice(idx, 1)
     }
