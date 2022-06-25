@@ -48,6 +48,62 @@ function findRedundantConnection(edges: number[][]): number[] {
     return res
 }
 
+function findRedundantConnection2(edges: number[][]): number[] {
+    let res: number[] = []
+
+    const map = new Map<number, NewNode>()
+    let countMap = new Map<number, NewNode[]>()
+
+    for(let edge of edges){
+        for(const e of edge){
+            if(!map.has(e)){
+                map.set(e, new NewNode(e))
+            }
+        }
+        const n1 = map.get(edge[0])!
+        const n2 = map.get(edge[1])!
+        n1.link(n2)
+        n2.link(n1)
+    }
+
+    map.forEach((node: NewNode, key: number) => {
+        const count = node.getLinkCount()
+        if(!countMap.has(count)){
+            countMap.set(count, [])
+        }
+        const arr = countMap.get(count)
+        arr?.push(node)
+    })
+
+    while((countMap.get(1) ?? []).length > 0){
+        const arr = countMap.get(1)!
+        countMap.delete(1)
+        for(let node of arr){
+            const removedNode = node.popEdge()!
+            const count = removedNode.getLinkCount()
+            removedNode?.unlink(node)
+            
+            const idx = countMap.get(count)?.indexOf(removedNode) ?? 0
+            countMap.get(count)?.splice(idx, 1)
+            let newArr = countMap.get(count-1)
+            if(newArr == null){
+                newArr = []
+                countMap.set(count-1, newArr)
+            }
+            newArr.push(removedNode)
+        }
+    }
+
+    for(let i=edges.length-1 ; i>=0 ; i-=1){
+        const edge = edges[i]
+        if(map.get(edge[0])!.getLinkCount() > 1 && map.get(edge[1])!.getLinkCount() > 1 ){
+            return edge
+        }
+    }
+
+    return res
+}
+
 class NewNode {
     private _linked: NewNode[]
     value: number
