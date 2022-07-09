@@ -21,7 +21,7 @@ function strToPos(pos: string) {
 }
 
 function orangesRotting(grid: number[][]): number {
-  let res = 0
+  let res = -1
   let map: number[][] = []
   let queue: Set<string> = new Set()
 
@@ -34,8 +34,8 @@ function orangesRotting(grid: number[][]): number {
       if (grid[y][x] === Status.Empty) {
         continue
       }
-      goalCounter += 1
 
+      goalCounter += 1
       if (grid[y][x] === Status.Fresh) {
         continue
       }
