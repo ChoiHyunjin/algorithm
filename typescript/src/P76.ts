@@ -1,32 +1,33 @@
+const map = {}
+function hasStr(t: string) {
+  const tempMap = { ...map }
+  for (const char of t) {
+    if (!tempMap[char]) {
+      return false
+    }
+    tempMap[char] -= 1
+  }
+
+  return true
+}
+
+function add(s: string) {
+  if (!map[s]) {
+    map[s] = 0
+  }
+  map[s] += 1
+}
+
+function remove(s: string) {
+  map[s] -= 1
+}
+
 function minWindow(s: string, t: string): string {
-  const map = {}
-  function hasStr(t: string) {
-    const tempMap = { ...map }
-    for (const char of t) {
-      if (!tempMap[char]) {
-        return false
-      }
-      tempMap[char] -= 1
-    }
-
-    return true
-  }
-
-  function add(s: string) {
-    if (!map[s]) {
-      map[s] = 0
-    }
-    map[s] += 1
-  }
-
-  function remove(s: string) {
-    map[s] -= 1
-  }
-
   let res = ''
 
   let head = 0
-  let tail = 0
+  let tail = 1
+  add(s.charAt(tail))
   while (tail <= s.length) {
     if (hasStr(t)) {
       res =
