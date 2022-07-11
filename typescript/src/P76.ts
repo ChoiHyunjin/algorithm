@@ -1,17 +1,31 @@
 function minWindow(s: string, t: string): string {
   const map = {}
-  function hasStr(t: string) {
-    const tempMap = { ...map }
+  const tMap = {}
+
+  for (const char of t) {
+    // @ts-ignore
+    if (!tMap[char]) {
+      // @ts-ignore
+      tMap[char] = 0
+    }
+    // @ts-ignore
+    tMap[char] += 1
+  }
+
+  function hasStr() {
     for (const char of t) {
       // @ts-ignore
-      if (!tempMap[char]) {
+      if (!hasChar(char)) {
         return false
       }
-      // @ts-ignore
-      tempMap[char] -= 1
     }
 
     return true
+  }
+
+  function hasChar(char: string) {
+    // @ts-ignore
+    return map[char] >= tMap[char]
   }
 
   function add(s: string) {
@@ -28,17 +42,16 @@ function minWindow(s: string, t: string): string {
     // @ts-ignore
     map[s] -= 1
   }
-  if (s === 'aa' && t === 'aa') return s
+
   let res = ''
 
   let head = 0
   let tail = 1
   add(s.charAt(0))
   while (tail <= s.length && head < tail) {
-    if (hasStr(t)) {
+    if (hasStr()) {
       res =
         res.length === 0 || tail - head < res.length ? s.slice(head, tail) : res
-      // console.log('res:', head, tail)
       if (tail + 1 - head === t.length) {
         break
       }
