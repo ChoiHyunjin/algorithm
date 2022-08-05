@@ -15,7 +15,7 @@ class P134{
         for i in 0..<gas.count{
             let subs = gas[i] - cost[i]
             total += subs
-            if subs > 0 && sum<0 {
+            if sum<0 {
                 ptr = i
                 sum = 0
             }

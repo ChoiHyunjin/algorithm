@@ -30,29 +30,10 @@ class P49 {
     }
   }
   
-  func toAsciiArray (str: String) -> [Int]{
+  func toAsciiArray (str: String) -> [Int] {
     let aAscii = Character("a").asciiValue!
     return Array(str).map{
       Int($0.asciiValue! - aAscii)
     }
-  }
-  
-  func isAnagram(_ str1: [Int], _ str2: String) -> Bool{
-    if str1.count != str2.count {
-      return false
-    }
-    
-    var checkSum = Array(str1)
-    
-    let chars = self.toAsciiArray(str: str2)
-    
-    for char in chars{
-      if checkSum[char] <= 0{
-        return false
-      }else {
-        checkSum[char] -= 1
-      }
-    }
-    return true
   }
 }
