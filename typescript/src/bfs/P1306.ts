@@ -5,7 +5,7 @@ function canReach(arr: number[], start: number): boolean {
 
   bfs.push(start);
   while (bfs.length > 0) {
-    let idx = bfs.pop()!;
+    let idx = bfs.shift()!;
     if (!!visited[idx]) {
       continue;
     }
