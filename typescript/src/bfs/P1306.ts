@@ -2,7 +2,6 @@
 function canReach(arr: number[], start: number): boolean {
   const bfs: number[] = [];
   const visited = {};
-  let result = false;
 
   bfs.push(start);
   while (bfs.length > 0) {
@@ -24,7 +23,7 @@ function canReach(arr: number[], start: number): boolean {
     }
   }
 
-  return result;
+  return false;
 }
 
 // DFS
@@ -53,3 +52,4 @@ function canReach2(arr: number[], start: number): boolean {
 
   return dfs(start);
 }
+
