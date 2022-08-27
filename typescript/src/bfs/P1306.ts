@@ -32,7 +32,7 @@ function canReach2(arr: number[], start: number): boolean {
   const visited = {};
 
   function dfs(idx: number): boolean {
-    if(idx < 0 || idx >= arr.length){
+    if(idx < 0 || idx >= arr.length || visited[idx]){
       return false
     }
     if(arr[idx] === 0){
@@ -41,19 +41,11 @@ function canReach2(arr: number[], start: number): boolean {
 
     let result = false;
 
-    if(!visited[idx]){
-      visited[idx] = [false, false]
-    }
+    visited[idx] = true
 
-    const visit = visited[idx]
-
-    if(!visit[0]) {
-      result = dfs(idx - arr[idx])
-      visit[0] = true
-    }
-    if(!result && !visit[1]) {
+    result = dfs(idx - arr[idx])
+    if(!result) {
       result = dfs(idx + arr[idx])
-      visit[1] = true
     }
 
     return result
