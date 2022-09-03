@@ -11,12 +11,12 @@ function flattenDFS(root: TreeNode | null): TreeNode | null {
   const left = root.left
   const right = root.right
   const leftLast = flattenDFS(left)
-  const rightLast = flattenDFS(right) ?? root
+  const rightLast = flattenDFS(right)
   if (!leftLast) {
-    return rightLast
+    return rightLast ?? root
   }
   root.right = left
   leftLast.right = right
   root.left = null
-  return rightLast
+  return rightLast ?? leftLast ?? root
 }
