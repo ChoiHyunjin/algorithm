@@ -2,18 +2,22 @@ function maxJumps(arr: number[], d: number): number {
   let max = 0
 
   const visited: { [key: number]: number } = {}
+  /**
+   * 점프 확인 함수. 개선버전.
+   * @param from
+   * @param to
+   * @returns
+   */
   function canJump(from: number, to: number): boolean {
-    let res = true
-
-    const left = from > to ? to : from + 1
-    const right = from > to ? from - 1 : to
-    for (let i = left; res && i <= right; i += 1) {
-      res = arr[from] > arr[i]
-    }
-
-    return res
+    return arr[from] > arr[to]
   }
 
+  /**
+   * 성능 개선 버전.
+   * 점프 확인 횟수를 줄임.
+   * @param start 시작지점
+   * @returns 점프 횟수
+   */
   function jump(start: number): number {
     if (!!visited[start]) {
       return visited[start]
@@ -43,6 +47,29 @@ function maxJumps(arr: number[], d: number): number {
     return res + 1
   }
 
+  /**
+   * 점프 확인 함수. 기존 버전.
+   * @param from
+   * @param to
+   * @returns
+   */
+  function canJump1(from: number, to: number): boolean {
+    let res = true
+
+    const left = from > to ? to : from + 1
+    const right = from > to ? from - 1 : to
+    for (let i = left; res && i <= right; i += 1) {
+      res = arr[from] > arr[i]
+    }
+
+    return res
+  }
+
+  /**
+   * 정답 v1.
+   * @param start 시작 지점
+   * @returns 점프 횟수
+   */
   function jump1(start: number): number {
     if (!!visited[start]) {
       return visited[start]
