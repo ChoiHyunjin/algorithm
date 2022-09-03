@@ -1,4 +1,4 @@
-import TreeNode from '../utils/TreeNode'
+import TreeNode from '../../utils/TreeNode'
 
 function flatten(root: TreeNode | null): void {
   flattenDFS(root)
