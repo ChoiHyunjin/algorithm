@@ -22,6 +22,35 @@ function maxJumps(arr: number[], d: number): number {
     let res = 0
 
     const left = start - d < 0 ? 0 : start - d
+    for (let i = start - 1; i >= left; i -= 1) {
+      if (!canJump(start, i)) {
+        break
+      }
+
+      res = Math.max(res, jump(i))
+    }
+
+    const right = start + d >= arr.length ? arr.length - 1 : start + d
+    for (let i = start + 1; i <= right; i += 1) {
+      if (!canJump(start, i)) {
+        break
+      }
+
+      res = Math.max(res, jump(i))
+    }
+
+    visited[start] = res + 1
+    return res + 1
+  }
+
+  function jump1(start: number): number {
+    if (!!visited[start]) {
+      return visited[start]
+    }
+
+    let res = 0
+
+    const left = start - d < 0 ? 0 : start - d
     const right = start + d >= arr.length ? arr.length - 1 : start + d
 
     for (let i = left; i <= right; i += 1) {
