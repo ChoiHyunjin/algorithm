@@ -8,7 +8,7 @@
 import Foundation
 
 class P91 {
-	func numDecodings2(_ s: String) -> Int {
+	func numDecodings(_ s: String) -> Int {
 		if s[s.startIndex] == "0" {
 			return 0
 		}else if s.count == 1{
@@ -65,19 +65,19 @@ class P91 {
 		return res
 	}
 	
-	func numDecodings(_ s: String) -> Int {
-		var arr = Array(s).map{
-			 Int($0.asciiValue!) - 48
-		}
-		
-		return dp(arr, start: 0)
-	}
-	
-	func dp(_ arr:[Int], start: Int) -> Int {
-		var count = 1
-		
-		for i in start..<arr.count{
-			
-		}
-	}
+//	func numDecodings(_ s: String) -> Int {
+//		var arr = Array(s).map{
+//			 Int($0.asciiValue!) - 48
+//		}
+//		
+//		return dp(arr, start: 0)
+//	}
+//	
+//	func dp(_ arr:[Int], start: Int) -> Int {
+//		var count = 1
+//		
+//		for i in start..<arr.count{
+//			
+//		}
+//	}
 }

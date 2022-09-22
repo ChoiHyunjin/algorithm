@@ -19,6 +19,7 @@ class P57 {
     while i < intervals.count {
       let interval = intervals[i]
       var new = newInterval
+      // 비교 대상 찾기
       if isOverlap(interval1: interval, interval2: new){
         new = self.getMerged(interval1: interval, interval2: new)
         i += 1
@@ -29,15 +30,15 @@ class P57 {
       } else {
         isInserted = true
       }
-      if res.count == 0 {
-        res.append(new)
-      }else {
-        let last = res.last!
+      
+      if let last = res.last {
         if isOverlap(interval1: last, interval2: new){
           res[res.count-1] = self.getMerged(interval1: last, interval2: new)
         }else {
           res.append(new)
         }
+      } else {
+        res.append(new)
       }
     }
     
