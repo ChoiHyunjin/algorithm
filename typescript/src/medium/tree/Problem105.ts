@@ -1,4 +1,5 @@
-import TreeNode from './TreeNode'
+import TreeNode from '../../utils/treeNode'
+
 function buildTree(preorder: number[], inorder: number[]): TreeNode | null {
   let root: TreeNode | null =
     preorder.length > 0 ? new TreeNode(preorder[0]) : null

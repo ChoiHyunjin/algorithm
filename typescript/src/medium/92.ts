@@ -1,4 +1,4 @@
-import ListNode from './tree/ListNode'
+import ListNode from '../utils/ListNode'
 
 function reverseBetween(
   head: ListNode | null,
