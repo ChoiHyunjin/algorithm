@@ -1,0 +1,53 @@
+class Solution {
+   public boolean canReach(int[] arr, int start) {
+      return searchBFS(arr, start);
+   }
+
+   private boolean searchBFS(int[] arr, int start) {
+      boolean[] isSearched = new boolean[arr.length];
+
+      Queue<Integer> q = new LinkedList<>();
+      q.add(start);
+
+      while (q.size() > 0) {
+         if(makingQwithCheckingZero(arr, q.poll(), q, isSearched))
+            return true;
+      }
+
+      return false;
+   }
+
+   private boolean makingQwithCheckingZero(int[] arr, int start, Queue<Integer> q, boolean[] isSearched) {
+      // 자신
+      if (arr[start] == 0) {
+         return true;
+      }
+
+      isSearched[start] = true;
+
+      // 왼쪽
+      int leftIndex = start - arr[start];
+      if (leftIndex >= 0 && !isSearched[leftIndex]) {
+         if (arr[leftIndex] == 0) {
+            return true;
+         }
+
+         q.add(leftIndex);
+         isSearched[leftIndex] = true;
+      }
+
+      // 오른쪽
+      int rightIndex = start + arr[start];
+      if (rightIndex < arr.length && !isSearched[rightIndex]) {
+         if (arr[rightIndex] == 0) {
+            return true;
+         }
+
+         q.add(rightIndex);
+         isSearched[rightIndex] = true;
+      }
+
+      return false;
+
+   }
+}
