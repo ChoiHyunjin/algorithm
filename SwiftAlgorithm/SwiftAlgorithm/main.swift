@@ -7,5 +7,4 @@
 
 import Foundation
 
-print("Hello, World!")
-
+print(P139().wordBreak("leetcode", ["leet", "leetcode"]))

@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		EC0A0CFC2ACA71110061A6D4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0A0CFB2ACA71110061A6D4 /* main.swift */; };
+		EC0A0E322ACA77CC0061A6D4 /* B14494.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0A0E312ACA77CC0061A6D4 /* B14494.swift */; };
+		EC0A0E342ACA77E70061A6D4 /* B1260.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0A0E332ACA77E70061A6D4 /* B1260.swift */; };
+		EC2E99CB2BFE2F92001F1A85 /* P131.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E99CA2BFE2F92001F1A85 /* P131.swift */; };
+		EC2F50E02BF9D18D00BBB728 /* P979.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F50DF2BF9D18D00BBB728 /* P979.swift */; };
+		EC3906492BD4B6680096DC68 /* P2304.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3906482BD4B6680096DC68 /* P2304.swift */; };
+		EC39064B2BD5112A0096DC68 /* P1971.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39064A2BD5112A0096DC68 /* P1971.swift */; };
+		EC39064D2BD681FC0096DC68 /* P752.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39064C2BD681FC0096DC68 /* P752.swift */; };
+		EC39064F2BDCE8DF0096DC68 /* P1276.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39064E2BDCE8DF0096DC68 /* P1276.swift */; };
+		EC463AE12BF0576C0042DA9F /* P786.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC463AE02BF0576C0042DA9F /* P786.swift */; };
+		EC5C73302BF059F600462176 /* P2373.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5C732F2BF059F600462176 /* P2373.swift */; };
+		EC5CC4012BC0D95200C64F97 /* M1638.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CC4002BC0D95200C64F97 /* M1638.swift */; };
+		EC5CC4032BC1500A00C64F97 /* M1249.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CC4022BC1500A00C64F97 /* M1249.swift */; };
+		EC63E8542BF0631300D448F3 /* B12865.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC63E8532BF0631300D448F3 /* B12865.swift */; };
+		EC63E8562BF0C40300D448F3 /* P139.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC63E8552BF0C40300D448F3 /* P139.swift */; };
+		ECE2C9032BC25587001BB1FE /* M678.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE2C9022BC25587001BB1FE /* M678.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -136,6 +151,22 @@
 		EC0A0E2D2ACA73A10061A6D4 /* BlockGameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockGameTest.swift; sourceTree = "<group>"; };
 		EC0A0E2E2ACA73A10061A6D4 /* NonDestroiedBuildingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonDestroiedBuildingTest.swift; sourceTree = "<group>"; };
 		EC0A0E2F2ACA73A10061A6D4 /* BlockGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockGame.swift; sourceTree = "<group>"; };
+		EC0A0E312ACA77CC0061A6D4 /* B14494.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = B14494.swift; sourceTree = "<group>"; };
+		EC0A0E332ACA77E70061A6D4 /* B1260.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = B1260.swift; sourceTree = "<group>"; };
+		EC2E99CA2BFE2F92001F1A85 /* P131.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P131.swift; sourceTree = "<group>"; };
+		EC2F50DF2BF9D18D00BBB728 /* P979.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P979.swift; sourceTree = "<group>"; };
+		EC3906482BD4B6680096DC68 /* P2304.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2304.swift; sourceTree = "<group>"; };
+		EC39064A2BD5112A0096DC68 /* P1971.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P1971.swift; sourceTree = "<group>"; };
+		EC39064C2BD681FC0096DC68 /* P752.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P752.swift; sourceTree = "<group>"; };
+		EC39064E2BDCE8DF0096DC68 /* P1276.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P1276.swift; sourceTree = "<group>"; };
+		EC463AE02BF0576C0042DA9F /* P786.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P786.swift; sourceTree = "<group>"; };
+		EC463AE32BF0581A0042DA9F /* .swiftlint.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yaml; sourceTree = "<group>"; };
+		EC5C732F2BF059F600462176 /* P2373.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2373.swift; sourceTree = "<group>"; };
+		EC5CC4002BC0D95200C64F97 /* M1638.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M1638.swift; sourceTree = "<group>"; };
+		EC5CC4022BC1500A00C64F97 /* M1249.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M1249.swift; sourceTree = "<group>"; };
+		EC63E8532BF0631300D448F3 /* B12865.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = B12865.swift; sourceTree = "<group>"; };
+		EC63E8552BF0C40300D448F3 /* P139.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P139.swift; sourceTree = "<group>"; };
+		ECE2C9022BC25587001BB1FE /* M678.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M678.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,10 +199,12 @@
 		EC0A0CFA2ACA71110061A6D4 /* SwiftAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				EC0A0E302ACA77B50061A6D4 /* baekjoon */,
 				EC0A0E102ACA73A10061A6D4 /* Programmers */,
 				EC0A0DB42ACA73A10061A6D4 /* src */,
 				EC0A0DAD2ACA73A10061A6D4 /* TodaysHouse */,
 				EC0A0CFB2ACA71110061A6D4 /* main.swift */,
+				EC463AE32BF0581A0042DA9F /* .swiftlint.yaml */,
 			);
 			path = SwiftAlgorithm;
 			sourceTree = "<group>";
@@ -196,6 +229,8 @@
 				EC0A0DB62ACA73A10061A6D4 /* problems */,
 				EC0A0E082ACA73A10061A6D4 /* utils */,
 				EC0A0E0C2ACA73A10061A6D4 /* musinsa */,
+				EC5C732F2BF059F600462176 /* P2373.swift */,
+				EC63E8552BF0C40300D448F3 /* P139.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -203,6 +238,8 @@
 		EC0A0DB62ACA73A10061A6D4 /* problems */ = {
 			isa = PBXGroup;
 			children = (
+				EC3906502BDCF2E90096DC68 /* Math */,
+				ECE2C9012BC2557A001BB1FE /* Stack */,
 				EC0A0DB72ACA73A10061A6D4 /* Tree */,
 				EC0A0DB92ACA73A10061A6D4 /* E1337.swift */,
 				EC0A0DBA2ACA73A10061A6D4 /* Bit */,
@@ -224,6 +261,8 @@
 				EC0A0E042ACA73A10061A6D4 /* M397.swift */,
 				EC0A0E052ACA73A10061A6D4 /* M396.swift */,
 				EC0A0E062ACA73A10061A6D4 /* Matrix */,
+				EC463AE02BF0576C0042DA9F /* P786.swift */,
+				EC2E99CA2BFE2F92001F1A85 /* P131.swift */,
 			);
 			path = problems;
 			sourceTree = "<group>";
@@ -274,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				EC0A0DC52ACA73A10061A6D4 /* P160.swift */,
+				EC2F50DF2BF9D18D00BBB728 /* P979.swift */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
@@ -281,6 +321,7 @@
 		EC0A0DC72ACA73A10061A6D4 /* Graph */ = {
 			isa = PBXGroup;
 			children = (
+				EC39064A2BD5112A0096DC68 /* P1971.swift */,
 				EC0A0DC82ACA73A10061A6D4 /* P133.swift */,
 				EC0A0DC92ACA73A10061A6D4 /* P207.swift */,
 			);
@@ -310,6 +351,7 @@
 				EC0A0DDD2ACA73A10061A6D4 /* P412.swift */,
 				EC0A0DDE2ACA73A10061A6D4 /* P69.swift */,
 				EC0A0DDF2ACA73A10061A6D4 /* P13.swift */,
+				EC39064C2BD681FC0096DC68 /* P752.swift */,
 				EC0A0DE02ACA73A10061A6D4 /* E1323.swift */,
 				EC0A0DE12ACA73A10061A6D4 /* P72.swift */,
 				EC0A0DE22ACA73A10061A6D4 /* P1941.swift */,
@@ -360,6 +402,8 @@
 				EC0A0E012ACA73A10061A6D4 /* P198.swift */,
 				EC0A0E022ACA73A10061A6D4 /* P139.swift */,
 				EC0A0E032ACA73A10061A6D4 /* P712.swift */,
+				EC5CC4002BC0D95200C64F97 /* M1638.swift */,
+				EC3906482BD4B6680096DC68 /* P2304.swift */,
 			);
 			path = DP;
 			sourceTree = "<group>";
@@ -444,6 +488,33 @@
 			path = Socar;
 			sourceTree = "<group>";
 		};
+		EC0A0E302ACA77B50061A6D4 /* baekjoon */ = {
+			isa = PBXGroup;
+			children = (
+				EC0A0E312ACA77CC0061A6D4 /* B14494.swift */,
+				EC0A0E332ACA77E70061A6D4 /* B1260.swift */,
+				EC63E8532BF0631300D448F3 /* B12865.swift */,
+			);
+			path = baekjoon;
+			sourceTree = "<group>";
+		};
+		EC3906502BDCF2E90096DC68 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				EC39064E2BDCE8DF0096DC68 /* P1276.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		ECE2C9012BC2557A001BB1FE /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				EC5CC4022BC1500A00C64F97 /* M1249.swift */,
+				ECE2C9022BC25587001BB1FE /* M678.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -454,6 +525,7 @@
 				EC0A0CF42ACA71110061A6D4 /* Sources */,
 				EC0A0CF52ACA71110061A6D4 /* Frameworks */,
 				EC0A0CF62ACA71110061A6D4 /* CopyFiles */,
+				EC463AE22BF057C10042DA9F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -497,12 +569,47 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EC463AE22BF057C10042DA9F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nif which swiftlint >/dev/null; then\n  swiftlint autocorrect --format\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC0A0CF42ACA71110061A6D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC39064B2BD5112A0096DC68 /* P1971.swift in Sources */,
+				EC63E8542BF0631300D448F3 /* B12865.swift in Sources */,
+				EC5C73302BF059F600462176 /* P2373.swift in Sources */,
+				EC0A0E342ACA77E70061A6D4 /* B1260.swift in Sources */,
+				EC63E8562BF0C40300D448F3 /* P139.swift in Sources */,
+				EC39064D2BD681FC0096DC68 /* P752.swift in Sources */,
+				ECE2C9032BC25587001BB1FE /* M678.swift in Sources */,
+				EC5CC4032BC1500A00C64F97 /* M1249.swift in Sources */,
+				EC3906492BD4B6680096DC68 /* P2304.swift in Sources */,
+				EC39064F2BDCE8DF0096DC68 /* P1276.swift in Sources */,
+				EC2E99CB2BFE2F92001F1A85 /* P131.swift in Sources */,
+				EC5CC4012BC0D95200C64F97 /* M1638.swift in Sources */,
+				EC463AE12BF0576C0042DA9F /* P786.swift in Sources */,
+				EC2F50E02BF9D18D00BBB728 /* P979.swift in Sources */,
 				EC0A0CFC2ACA71110061A6D4 /* main.swift in Sources */,
+				EC0A0E322ACA77CC0061A6D4 /* B14494.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
