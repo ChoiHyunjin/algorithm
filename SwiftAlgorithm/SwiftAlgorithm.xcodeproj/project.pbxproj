@@ -11,6 +11,7 @@
 		EC0A0E322ACA77CC0061A6D4 /* B14494.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0A0E312ACA77CC0061A6D4 /* B14494.swift */; };
 		EC0A0E342ACA77E70061A6D4 /* B1260.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0A0E332ACA77E70061A6D4 /* B1260.swift */; };
 		EC2E99CB2BFE2F92001F1A85 /* P131.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E99CA2BFE2F92001F1A85 /* P131.swift */; };
+		EC2E99CD2C01D6B5001F1A85 /* P140.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E99CC2C01D6B5001F1A85 /* P140.swift */; };
 		EC2F50E02BF9D18D00BBB728 /* P979.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F50DF2BF9D18D00BBB728 /* P979.swift */; };
 		EC3906492BD4B6680096DC68 /* P2304.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3906482BD4B6680096DC68 /* P2304.swift */; };
 		EC39064B2BD5112A0096DC68 /* P1971.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39064A2BD5112A0096DC68 /* P1971.swift */; };
@@ -22,7 +23,11 @@
 		EC5CC4032BC1500A00C64F97 /* M1249.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CC4022BC1500A00C64F97 /* M1249.swift */; };
 		EC63E8542BF0631300D448F3 /* B12865.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC63E8532BF0631300D448F3 /* B12865.swift */; };
 		EC63E8562BF0C40300D448F3 /* P139.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC63E8552BF0C40300D448F3 /* P139.swift */; };
+		ECB60AEA2C0AC29E0015DBA4 /* P260.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB60AE92C0AC29E0015DBA4 /* P260.swift */; };
+		ECB60AEC2C0AFA820015DBA4 /* P1404.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB60AEB2C0AFA820015DBA4 /* P1404.swift */; };
+		ECB60AEE2C0B04A90015DBA4 /* Rook.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB60AED2C0B04A90015DBA4 /* Rook.swift */; };
 		ECE2C9032BC25587001BB1FE /* M678.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE2C9022BC25587001BB1FE /* M678.swift */; };
+		ECF6850D2C02D11B00E706FC /* P552.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF6850C2C02D11B00E706FC /* P552.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -154,6 +159,7 @@
 		EC0A0E312ACA77CC0061A6D4 /* B14494.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = B14494.swift; sourceTree = "<group>"; };
 		EC0A0E332ACA77E70061A6D4 /* B1260.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = B1260.swift; sourceTree = "<group>"; };
 		EC2E99CA2BFE2F92001F1A85 /* P131.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P131.swift; sourceTree = "<group>"; };
+		EC2E99CC2C01D6B5001F1A85 /* P140.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P140.swift; sourceTree = "<group>"; };
 		EC2F50DF2BF9D18D00BBB728 /* P979.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P979.swift; sourceTree = "<group>"; };
 		EC3906482BD4B6680096DC68 /* P2304.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2304.swift; sourceTree = "<group>"; };
 		EC39064A2BD5112A0096DC68 /* P1971.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P1971.swift; sourceTree = "<group>"; };
@@ -166,7 +172,11 @@
 		EC5CC4022BC1500A00C64F97 /* M1249.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M1249.swift; sourceTree = "<group>"; };
 		EC63E8532BF0631300D448F3 /* B12865.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = B12865.swift; sourceTree = "<group>"; };
 		EC63E8552BF0C40300D448F3 /* P139.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P139.swift; sourceTree = "<group>"; };
+		ECB60AE92C0AC29E0015DBA4 /* P260.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P260.swift; sourceTree = "<group>"; };
+		ECB60AEB2C0AFA820015DBA4 /* P1404.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P1404.swift; sourceTree = "<group>"; };
+		ECB60AED2C0B04A90015DBA4 /* Rook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rook.swift; sourceTree = "<group>"; };
 		ECE2C9022BC25587001BB1FE /* M678.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M678.swift; sourceTree = "<group>"; };
+		ECF6850C2C02D11B00E706FC /* P552.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P552.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +273,11 @@
 				EC0A0E062ACA73A10061A6D4 /* Matrix */,
 				EC463AE02BF0576C0042DA9F /* P786.swift */,
 				EC2E99CA2BFE2F92001F1A85 /* P131.swift */,
+				EC2E99CC2C01D6B5001F1A85 /* P140.swift */,
+				ECF6850C2C02D11B00E706FC /* P552.swift */,
+				ECB60AE92C0AC29E0015DBA4 /* P260.swift */,
+				ECB60AEB2C0AFA820015DBA4 /* P1404.swift */,
+				ECB60AED2C0B04A90015DBA4 /* Rook.swift */,
 			);
 			path = problems;
 			sourceTree = "<group>";
@@ -597,9 +612,12 @@
 				EC39064B2BD5112A0096DC68 /* P1971.swift in Sources */,
 				EC63E8542BF0631300D448F3 /* B12865.swift in Sources */,
 				EC5C73302BF059F600462176 /* P2373.swift in Sources */,
+				EC2E99CD2C01D6B5001F1A85 /* P140.swift in Sources */,
 				EC0A0E342ACA77E70061A6D4 /* B1260.swift in Sources */,
 				EC63E8562BF0C40300D448F3 /* P139.swift in Sources */,
 				EC39064D2BD681FC0096DC68 /* P752.swift in Sources */,
+				ECB60AEA2C0AC29E0015DBA4 /* P260.swift in Sources */,
+				ECB60AEE2C0B04A90015DBA4 /* Rook.swift in Sources */,
 				ECE2C9032BC25587001BB1FE /* M678.swift in Sources */,
 				EC5CC4032BC1500A00C64F97 /* M1249.swift in Sources */,
 				EC3906492BD4B6680096DC68 /* P2304.swift in Sources */,
@@ -610,6 +628,8 @@
 				EC2F50E02BF9D18D00BBB728 /* P979.swift in Sources */,
 				EC0A0CFC2ACA71110061A6D4 /* main.swift in Sources */,
 				EC0A0E322ACA77CC0061A6D4 /* B14494.swift in Sources */,
+				ECF6850D2C02D11B00E706FC /* P552.swift in Sources */,
+				ECB60AEC2C0AFA820015DBA4 /* P1404.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
