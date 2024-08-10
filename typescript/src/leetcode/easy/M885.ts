@@ -4,7 +4,24 @@ function spiralMatrixIII(
   rStart: number,
   cStart: number,
 ): number[][] {
-  const directions = [[0,1], [1,0], [0,-1], [-1,0]]
+  const directions = [
+    [0, 1],
+    [1, 0],
+    [0, -1],
+    [-1, 0],
+  ]
+  const corners = [
+    [rStart, cStart + 1],
+    [rStart + 1, cStart + 1],
+    [rStart + 1, cStart - 1],
+    [rStart - 1, cStart - 1],
+  ]
+  const cornerWeights = [
+    [-1, 1],
+    [1, 1],
+    [1, -1],
+    [-1, -1],
+  ]
   const res: number[][] = []
 
   const isInRange = (r: number, c: number) => {
@@ -17,25 +34,25 @@ function spiralMatrixIII(
   }
 
   let diff = Math.max(rStart, cStart, rows - rStart - 1, cols - cStart - 1)
-  let flag = 0
-  let val = 0
-  for (let i = 1; i < diff; i += 1) {
-    directions.forEach(dir => {
-      flag += 1
-      if(flag > 1){
-        flag = 0
-        val += 1
-      }
 
-      for(let k = 0; k< i+val; k += 1){
+  for (let i = 0; i <= diff; i += 1) {
+    directions.forEach((dir, j) => {
+      const corner = corners[j]
+      while (true) {
         ptr[0] += dir[0]
         ptr[1] += dir[1]
-        console.log('ptr:', ptr);
-        
+
         if (isInRange(ptr[0], ptr[1])) {
           res.push([...ptr])
         }
+        if (ptr[0] === corner[0] && ptr[1] === corner[1]) {
+          break
+        }
       }
+
+      const cornerWeight = cornerWeights[j]
+      corner[0] += cornerWeight[0]
+      corner[1] += cornerWeight[1]
     })
   }
 
