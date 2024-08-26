@@ -12,7 +12,7 @@
  * }
  */
 
-import TreeNode from './utils/TreeNode'
+import TreeNode from '../leetcode/utils/TreeNode'
 
 function zigzagLevelOrder(root: TreeNode | null): number[][] {
   if (!root) {
